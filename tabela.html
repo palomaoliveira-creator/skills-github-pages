@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de Compras</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    table {
+      width: 50%;
+      border-collapse: collapse;
+      margin: 0 auto;
+    }
+    caption {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+    thead th {
+      background-color: #f2f2f2;
+      text-align: left;
+      padding: 8px;
+    }
+    tbody td {
+      padding: 8px;
+      border-top: 1px solid #ddd;
+    }
+    tbody tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    input[type="checkbox"] {
+      transform: scale(1.2);
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <caption>Lista de Compras</caption>
+    <thead>
+      <tr>
+        <th scope="col">Item</th>
+        <th scope="col">Comprado</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Arroz</td>
+        <td><input type="checkbox" aria-label="Arroz comprado"></td>
+      </tr>
+      <tr>
+        <td>Feijão</td>
+        <td><input type="checkbox" aria-label="Feijão comprado"></td>
+      </tr>
+      <tr>
+        <td>Açúcar</td>
+        <td><input type="checkbox" aria-label="Açúcar comprado"></td>
+      </tr>
+      <tr>
+        <td>Macarrão</td>
+        <td><input type="checkbox" aria-label="Macarrão comprado"></td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
